@@ -1,3 +1,4 @@
+import 'package:fikstur_app/widgets/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class StatisticsScreen extends StatefulWidget {
@@ -11,11 +12,15 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
   DataTable goals = DataTable(
     dataRowHeight: 65.0,
     decoration: BoxDecoration(
-      border: Border.all(width: 0.2),
+      border: Border.all(width: 0.2, color: Colors.white),
     ),
     columns: const [
-      DataColumn(label: Text('Sporcu')),
-      DataColumn(label: Text('Gol')),
+      DataColumn(
+          label: Text(
+        'Sporcu',
+        style: TextStyle(color: Colors.white),
+      )),
+      DataColumn(label: Text('Gol', style: TextStyle(color: Colors.white))),
     ],
     rows: [
       DataRow(
@@ -23,7 +28,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('1'),
+                const Text('1', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/EnnerValencia.png',
                   width: 60.0,
@@ -32,11 +37,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Enner Valencia'),
+                const Text('Enner Valencia',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('30')),
+          const DataCell(Text('30', style: TextStyle(color: Colors.white))),
         ],
       ),
       DataRow(
@@ -44,7 +50,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('2'),
+                const Text('2', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/Icardi.png',
                   width: 60.0,
@@ -53,11 +59,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Mauro Icardi'),
+                const Text('Mauro Icardi',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('25')),
+          const DataCell(Text('25', style: TextStyle(color: Colors.white))),
         ],
       ),
     ],
@@ -66,11 +73,11 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
   DataTable assists = DataTable(
     dataRowHeight: 65.0,
     decoration: BoxDecoration(
-      border: Border.all(width: 0.2),
+      border: Border.all(width: 0.2, color: Colors.white),
     ),
     columns: const [
-      DataColumn(label: Text('Sporcu')),
-      DataColumn(label: Text('Assist')),
+      DataColumn(label: Text('Sporcu', style: TextStyle(color: Colors.white))),
+      DataColumn(label: Text('Assist', style: TextStyle(color: Colors.white))),
     ],
     rows: [
       DataRow(
@@ -78,7 +85,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('1'),
+                const Text('1', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/Icardi.png',
                   width: 60.0,
@@ -87,11 +94,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Mauro Icardi'),
+                const Text('Mauro Icardi',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('11')),
+          const DataCell(Text(' 11', style: TextStyle(color: Colors.white))),
         ],
       ),
       DataRow(
@@ -99,7 +107,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('2'),
+                const Text('2', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/EnnerValencia.png',
                   width: 60.0,
@@ -108,11 +116,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Enner Valencia'),
+                const Text('Enner Valencia',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('7')),
+          const DataCell(Text('  7', style: TextStyle(color: Colors.white))),
         ],
       ),
     ],
@@ -121,11 +130,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
   DataTable yellowCard = DataTable(
     dataRowHeight: 65.0,
     decoration: BoxDecoration(
-      border: Border.all(width: 0.2),
+      border: Border.all(width: 0.2, color: Colors.white),
     ),
     columns: const [
-      DataColumn(label: Text('Sporcu')),
-      DataColumn(label: Text('Sarı Kart')),
+      DataColumn(label: Text('Sporcu', style: TextStyle(color: Colors.white))),
+      DataColumn(
+          label: Text('Sarı Kart', style: TextStyle(color: Colors.white))),
     ],
     rows: [
       DataRow(
@@ -133,7 +143,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('1'),
+                const Text('1', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/Icardi.png',
                   width: 60.0,
@@ -142,11 +152,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Mauro Icardi'),
+                const Text('Mauro Icardi',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('8')),
+          const DataCell(Text('    8', style: TextStyle(color: Colors.white))),
         ],
       ),
       DataRow(
@@ -154,7 +165,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('2'),
+                const Text('2', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/EnnerValencia.png',
                   width: 60.0,
@@ -163,11 +174,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Enner Valencia'),
+                const Text('Enner Valencia',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('7')),
+          const DataCell(Text('    7', style: TextStyle(color: Colors.white))),
         ],
       ),
     ],
@@ -176,11 +188,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
   DataTable redCard = DataTable(
     dataRowHeight: 65.0,
     decoration: BoxDecoration(
-      border: Border.all(width: 0.2),
+      border: Border.all(width: 0.2, color: Colors.white),
     ),
     columns: const [
-      DataColumn(label: Text('Sporcu')),
-      DataColumn(label: Text('Kırmızı Kart')),
+      DataColumn(label: Text('Sporcu', style: TextStyle(color: Colors.white))),
+      DataColumn(
+          label: Text('Kırmızı Kart', style: TextStyle(color: Colors.white))),
     ],
     rows: [
       DataRow(
@@ -188,7 +201,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('1'),
+                const Text('1', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/EnnerValencia.png',
                   width: 60.0,
@@ -197,11 +210,13 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Enner Valencia'),
+                const Text('Enner Valencia',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('3')),
+          const DataCell(
+              Text('       3', style: TextStyle(color: Colors.white))),
         ],
       ),
       DataRow(
@@ -209,7 +224,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           DataCell(
             Row(
               children: [
-                const Text('2'),
+                const Text('2', style: TextStyle(color: Colors.white)),
                 Image.asset(
                   'assets/images/Icardi.png',
                   width: 60.0,
@@ -218,11 +233,13 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Text('Mauro Icardi'),
+                const Text('Mauro Icardi',
+                    style: TextStyle(color: Colors.white)),
               ],
             ),
           ),
-          const DataCell(Text('2')),
+          const DataCell(
+              Text('       2', style: TextStyle(color: Colors.white))),
         ],
       ),
     ],
@@ -234,6 +251,8 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
       appBar: AppBar(
         title: const Text('İstatiskler'),
       ),
+      drawer: const MyDrawer(),
+      backgroundColor: Colors.brown,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Center(

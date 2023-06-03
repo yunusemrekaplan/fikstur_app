@@ -1,3 +1,4 @@
+import 'package:fikstur_app/widgets/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class PuanTableScreen extends StatefulWidget {
@@ -58,6 +59,7 @@ class _PuanTableScreenState extends State<PuanTableScreen> {
       appBar: AppBar(
         title: const Text('Puan Durumu'),
       ),
+      drawer: const MyDrawer(),
       body: Column(
         children: [
           Center(

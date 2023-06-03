@@ -17,8 +17,8 @@ class FiksturApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       routes: {
-        'puan-table-screen': (BuildContext context) => PuanTableScreen(),
-        'statistics-screen': (BuildContext context) => StatisticsScreen(),
+        'puan-table-screen': (BuildContext context) => const PuanTableScreen(),
+        'statistics-screen': (BuildContext context) => const StatisticsScreen(),
       },
       initialRoute: 'statistics-screen',
     );
